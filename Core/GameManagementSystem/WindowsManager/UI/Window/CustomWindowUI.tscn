@@ -1,0 +1,71 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctcpv30qgoo8c"]
+
+[ext_resource type="Script" uid="uid://cg6rpdm0oxief" path="res://Core/GameManagementSystem/WindowsManager/UI/Window/CustomWindowUI.gd" id="1_djatx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ye0vy"]
+bg_color = Color(0.532611, 0.0542409, 0.0676424, 1)
+
+[node name="CustomWindowUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_djatx")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.212305, 0.212305, 0.212305, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+color = Color(0.0687983, 0.0687983, 0.0687983, 1)
+
+[node name="Button" type="Button" parent="VBoxContainer/ColorRect"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -16.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_ye0vy")
+text = "X"
+
+[node name="Label" type="Label" parent="VBoxContainer/ColorRect"]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = 50.0
+offset_right = 148.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "Window"
+vertical_alignment = 1
+
+[node name="ContentContainer" type="CenterContainer" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+
+[connection signal="child_entered_tree" from="." to="." method="OnChildEnteredTree"]
+[connection signal="pressed" from="VBoxContainer/ColorRect/Button" to="." method="OnCloseRequested"]

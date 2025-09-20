@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dirrvyeiihovj"]
+
+[ext_resource type="Script" uid="uid://bpr4iudgyjnv2" path="res://Core/GameManagementSystem/GameInstance/GameInstanceBase.gd" id="1_1ub7m"]
+[ext_resource type="PackedScene" uid="uid://d1n1sump6lqmv" path="res://Game/Maps/DevMap.tscn" id="2_4lha5"]
+
+[node name="GameInstanceBase" type="Node"]
+script = ExtResource("1_1ub7m")
+default_map_scene = ExtResource("2_4lha5")
+metadata/_custom_type_script = "uid://bpr4iudgyjnv2"

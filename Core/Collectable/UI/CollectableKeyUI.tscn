@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsa88x0p720ph"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k214n"]
+bg_color = Color(0.140447, 0.140447, 0.140447, 1)
+
+[node name="CollectableKeyUI" type="Label"]
+custom_minimum_size = Vector2(50, 50)
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_k214n")
+text = "[ E ]"
+horizontal_alignment = 1
+vertical_alignment = 1

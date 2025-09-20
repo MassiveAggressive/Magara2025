@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2d5awuwyk40s"]
+
+[ext_resource type="Script" uid="uid://bpyslint1ag48" path="res://Core/Inventory/UI/CardUI.gd" id="1_8477p"]
+
+[node name="CardUI" type="ColorRect"]
+custom_minimum_size = Vector2(50, 50)
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.14406255, 0.14406255, 0.14406255, 1)
+script = ExtResource("1_8477p")
+card_name = "LOVERS"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "L"
+horizontal_alignment = 1
+vertical_alignment = 1

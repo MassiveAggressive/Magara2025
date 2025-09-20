@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3 uid="uid://bc2ggdg8sk0em"]
+
+[ext_resource type="Script" uid="uid://di3f1jq71fw46" path="res://Game/GameManager/InGameGameManager.gd" id="1_26u5w"]
+[ext_resource type="PackedScene" uid="uid://x444mo5mj2ne" path="res://Game/Player/InGamePlayerState/InGamePlayerState.tscn" id="2_eae84"]
+[ext_resource type="PackedScene" uid="uid://dy7ry53weof53" path="res://Game/Player/Player.tscn" id="3_jh1m8"]
+
+[node name="InGameGameManager" type="Node"]
+script = ExtResource("1_26u5w")
+default_player_state_scene = ExtResource("2_eae84")
+default_player_scene = ExtResource("3_jh1m8")
+metadata/_custom_type_script = "uid://bx4nb5r11kdpj"

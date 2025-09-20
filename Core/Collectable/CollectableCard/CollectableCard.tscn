@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://c081xh8mbgo4r"]
+
+[ext_resource type="PackedScene" uid="uid://chhue3s3ygy82" path="res://Core/Collectable/CollectableBase.tscn" id="1_qnoq4"]
+[ext_resource type="Script" uid="uid://djvw2wixjdsvk" path="res://Core/Collectable/CollectableCard/CollectableCard.gd" id="2_br4q2"]
+[ext_resource type="Texture2D" uid="uid://c34ujplk02cft" path="res://icon.svg" id="3_38163"]
+
+[node name="CollectableCard" instance=ExtResource("1_qnoq4")]
+script = ExtResource("2_br4q2")
+card = null
+collectable_icon = ExtResource("3_38163")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = null

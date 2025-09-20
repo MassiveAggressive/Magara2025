@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://br7ceg4udqgvb"]
+
+[ext_resource type="Script" uid="uid://cpb46fljmvpjc" path="res://Core/Tools/DynamicPolygon/DynamicPolygon.gd" id="1_3tinq"]
+
+[node name="DynamicPolygon" type="Polygon2D"]
+polygon = PackedVector2Array(50, 50, 50, -50, -50, -50, -50, 50)
+script = ExtResource("1_3tinq")
+rotation_offset = 45.0

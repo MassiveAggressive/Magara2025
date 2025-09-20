@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjegm6itqvpx8"]
+
+[ext_resource type="Script" uid="uid://c1covtipjhbn4" path="res://Core/Tools/Arm/Arm2D.gd" id="1_tqhrm"]
+
+[node name="Arm2D" type="Node2D"]
+script = ExtResource("1_tqhrm")

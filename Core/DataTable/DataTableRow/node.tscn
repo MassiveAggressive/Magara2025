@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://de6khal8lu0pp"]
+
+[ext_resource type="Script" uid="uid://dqq8e47ny55cg" path="res://Core/DataTable/DataTableRow/node.gd" id="1_wuu6p"]
+
+[node name="Node" type="Node"]
+script = ExtResource("1_wuu6p")

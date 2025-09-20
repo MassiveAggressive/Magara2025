@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bemw52fmn4e58"]
+
+[ext_resource type="Script" uid="uid://cl8q7rtvdo22j" path="res://Core/Inventory/UI/InventoryUI.gd" id="1_1ebgi"]
+
+[node name="InventoryUI" type="HBoxContainer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -90.0
+offset_top = 50.0
+offset_right = -50.0
+offset_bottom = 90.0
+grow_horizontal = 0
+script = ExtResource("1_1ebgi")

@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://x444mo5mj2ne"]
+
+[ext_resource type="PackedScene" uid="uid://dosoqp3rsmj1o" path="res://Core/GameManagementSystem/PlayerState/PlayerStateBase.tscn" id="1_ddc5i"]
+[ext_resource type="PackedScene" uid="uid://6cwhb4b22e7j" path="res://Core/Inventory/InventoryBase.tscn" id="2_5jf1v"]
+[ext_resource type="Script" uid="uid://crjhfc5j75om2" path="res://Game/Player/InGamePlayerState/InGamePlayerState.gd" id="2_gd1cy"]
+
+[node name="InGamePlayerState" instance=ExtResource("1_ddc5i")]
+script = ExtResource("2_gd1cy")
+
+[node name="InventoryBase" parent="." index="0" instance=ExtResource("2_5jf1v")]

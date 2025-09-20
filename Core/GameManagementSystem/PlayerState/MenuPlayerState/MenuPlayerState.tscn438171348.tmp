@@ -1,0 +1,23 @@
+[gd_scene load_steps=7 format=3 uid="uid://dye3bx5xu8we5"]
+
+[ext_resource type="Script" uid="uid://dg5v8dp2ko0ew" path="res://Core/GameManagementSystem/PlayerState/PlayerStateBase.gd" id="1_451as"]
+[ext_resource type="Script" uid="uid://cth5v4ekj8c7k" path="res://Core/AbilitySystem/AbilitySystemBase.gd" id="2_swvsy"]
+[ext_resource type="PackedScene" uid="uid://b1dg1mkivtrw4" path="res://Core/InventoryEquipment/MenuInventoryEquipment/MenuInventoryEquipment.tscn" id="3_l5wdn"]
+[ext_resource type="Resource" uid="uid://cyskcfqntc5ri" path="res://Core/InventoryEquipment/Item/ItemDataTable.tres" id="4_fegjr"]
+[ext_resource type="Script" uid="uid://cxkhqpernu4c6" path="res://Core/DataTable/DataTableRow/DataTableRow.gd" id="4_l5wdn"]
+
+[sub_resource type="Resource" id="Resource_fegjr"]
+script = ExtResource("4_l5wdn")
+data_table = ExtResource("4_fegjr")
+row = "SH-1"
+
+[node name="MenuPlayerState" type="Node"]
+script = ExtResource("1_451as")
+metadata/_custom_type_script = "uid://dg5v8dp2ko0ew"
+
+[node name="AbilitySystemBase" type="Node" parent="."]
+script = ExtResource("2_swvsy")
+metadata/_custom_type_script = "uid://cth5v4ekj8c7k"
+
+[node name="MenuInventoryEquipment" parent="." instance=ExtResource("3_l5wdn")]
+item1 = SubResource("Resource_fegjr")

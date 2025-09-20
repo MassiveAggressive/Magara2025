@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3 uid="uid://c12fgejkbij4y"]
+
+[ext_resource type="Script" uid="uid://bx4nb5r11kdpj" path="res://Core/GameManagementSystem/GameManager/GameManagerBase.gd" id="1_3qb1i"]
+[ext_resource type="PackedScene" uid="uid://dosoqp3rsmj1o" path="res://Core/GameManagementSystem/PlayerState/PlayerStateBase.tscn" id="2_osiq6"]
+[ext_resource type="PackedScene" uid="uid://cs8qwk5wlg765" path="res://Core/GameManagementSystem/GameManager/DefaultPlayer.tscn" id="3_oyevy"]
+
+[node name="GameManagerBase" type="Node"]
+script = ExtResource("1_3qb1i")
+default_player_state_scene = ExtResource("2_osiq6")
+default_player_scene = ExtResource("3_oyevy")
+metadata/_custom_type_script = "uid://bx4nb5r11kdpj"

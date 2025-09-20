@@ -1,0 +1,25 @@
+[gd_scene load_steps=8 format=3 uid="uid://x444mo5mj2ne"]
+
+[ext_resource type="PackedScene" uid="uid://dosoqp3rsmj1o" path="res://Core/GameManagementSystem/PlayerState/PlayerStateBase.tscn" id="1_ddc5i"]
+[ext_resource type="Script" uid="uid://brm2rc78icmf0" path="res://Core/Attributes/InGameAttributeContainer/InGameAttributeContainer.gd" id="2_6qmku"]
+[ext_resource type="PackedScene" uid="uid://c6ufkt72npy82" path="res://Core/Attributes/Drivers/HealthDriver/HealthAttributesDriver.tscn" id="3_fti32"]
+[ext_resource type="PackedScene" uid="uid://6kyvda1ujhub" path="res://Core/Attributes/Drivers/DamageDriver/DamageAttributesDriver.tscn" id="4_1upju"]
+[ext_resource type="PackedScene" uid="uid://b3lmepbe2tb0x" path="res://Core/Attributes/Drivers/LevelDriver/LevelAttributesDriver.tscn" id="5_eg14p"]
+[ext_resource type="PackedScene" uid="uid://bkelumflfops3" path="res://Core/Attributes/Drivers/ExperienceDriver/ExperienceAttributesDriver.tscn" id="6_sgvs6"]
+[ext_resource type="PackedScene" uid="uid://c8iqhrq4udcnp" path="res://Core/InventoryEquipment/InGameInventoryEquipment/InGameInventoryEquipment.tscn" id="7_alnpm"]
+
+[node name="InGamePlayerState" instance=ExtResource("1_ddc5i")]
+
+[node name="InGameAttributeContainer" type="Node" parent="." index="0"]
+script = ExtResource("2_6qmku")
+metadata/_custom_type_script = "uid://brm2rc78icmf0"
+
+[node name="HealthAttributesDriver" parent="." index="1" instance=ExtResource("3_fti32")]
+
+[node name="DamageAttributesDriver" parent="." index="2" instance=ExtResource("4_1upju")]
+
+[node name="LevelAttributesDriver" parent="." index="3" instance=ExtResource("5_eg14p")]
+
+[node name="ExperienceAttributesDriver" parent="." index="4" instance=ExtResource("6_sgvs6")]
+
+[node name="InGameInventoryEquipment" parent="." index="5" instance=ExtResource("7_alnpm")]
