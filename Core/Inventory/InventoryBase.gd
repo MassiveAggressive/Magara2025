@@ -18,6 +18,10 @@ func _ready() -> void:
 	inventory_ui.owner_inventory = self
 	
 	Canvas.AddChild(inventory_ui)
+	
+	AddCard()
+	AddCard()
+	AddCard()
 
 func AddCard() -> void:
 	AddItemToInventory(card)

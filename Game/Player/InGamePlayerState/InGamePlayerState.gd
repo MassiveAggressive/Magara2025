@@ -17,9 +17,14 @@ var player_2_input_keys: Dictionary[Util.EInputKey, StringName] = {
 	Util.EInputKey.DASH: "Dash2"
 }
 
+var card: GravityCard
+
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("LeftClick"):
-		Gravity.Flip()
+		card = GravityCard.new()
+		card.ApplyEffect()
+	if event.is_action_released("LeftClick"):
+		card.RemoveEffect()
 
 func SetPlayerNode(node: Node, player_index: int) -> void:
 	if player_index == 0:

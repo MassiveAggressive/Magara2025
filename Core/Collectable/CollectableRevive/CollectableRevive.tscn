@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://dv050bcflli0s"]
+
+[ext_resource type="PackedScene" uid="uid://chhue3s3ygy82" path="res://Core/Collectable/CollectableBase.tscn" id="1_fq5bx"]
+[ext_resource type="Script" uid="uid://cf6p2lkireh6v" path="res://Core/Collectable/CollectableRevive/CollectableRevive.gd" id="2_ftcdk"]
+
+[node name="CollectableRevive" instance=ExtResource("1_fq5bx")]
+script = ExtResource("2_ftcdk")

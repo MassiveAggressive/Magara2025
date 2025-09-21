@@ -22,5 +22,10 @@ func SetPlayer(new_player_node: Node, player_index: int) -> void:
 		player_2_node = new_player_node
 		PlayerReady.emit(player_2_node)
 	
-func GetPlayer() -> Node:
-	return player_1_node
+func GetPlayer(player_index: int) -> Node:
+	if player_index == 0:
+		return player_1_node
+	elif player_index == 1:
+		return player_2_node
+	
+	return null

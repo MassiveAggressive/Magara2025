@@ -5,3 +5,6 @@ class_name CardBase extends Resource
 
 func ApplyEffect() -> void:
 	pass
+
+func RemoveEffect() -> void:
+	pass
